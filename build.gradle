@@ -5,6 +5,13 @@ plugins {
 	id 'war'
 }
 
+repositories {
+	maven {
+		url 'https://maven.aliyun.com/repository/public'
+	}
+	mavenCentral()
+}
+
 group = 'com.example'
 version = '0.0.2-SNAPSHOT'
 sourceCompatibility = '1.8'

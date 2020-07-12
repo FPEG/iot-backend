@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
-import com.example.demo.bean.DriverInfoBean;
-import com.example.demo.dto.DriverGeoDto;
+import com.example.demo.bean.CarInfoBean;
+import com.example.demo.dto.GeoDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.*;
 public class UserController {
 
     @Autowired
-    DriverInfoBean driverInfoBean;
+    CarInfoBean carInfoBean;
 
     @GetMapping("/geo/{id}")
-    public DriverGeoDto fetch(
-            @PathVariable("id") Long id
+    public GeoDto fetch(
+            @PathVariable("id") Number id
     ){
-        return driverInfoBean.getGeoDtoMap().get(id);
+        return carInfoBean.getGeoDtoMap().get(id);
     }
 }

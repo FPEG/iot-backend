@@ -7,7 +7,7 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class DriverGeoDto {
-    String latitude;
-    String longitude;
+public class GeoDto {
+    double latitude;
+    double longitude;
 }
