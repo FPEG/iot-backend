@@ -1,6 +1,6 @@
 package com.example.demo.bean;
 
-import com.example.demo.dto.GeoDto;
+import com.example.demo.dto.CarRT;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -17,11 +17,14 @@ public class CarInfoBean {
 
     int id;
     String license;
+    String start;
+    String end;
 
-    Map<Number, GeoDto> geoDtoMap = new HashMap<>();
+    Map<Number, CarRT> geoDtoMap = new HashMap<>();
 
-    public Map<Number, GeoDto> getGeoDtoMap() {
+    public Map<Number, CarRT> getGeoDtoMap() {
         return geoDtoMap;
     }
+
 
 }

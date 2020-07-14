@@ -35,6 +35,9 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	implementation 'cn.leancloud:storage-core:7.0.0'
+	implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+	compile fileTree(dir:'libs',include:['*.jar'])
 }
 
 test {
